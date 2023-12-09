@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gear Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gear Calculator</h1>
+
+    <div class="input-section">
+        <label for="teeth">Number of Teeth:</label>
+        <input type="number" id="teeth" name="teeth" min="1"><br><br>
+
+        <label for="module">Module:</label>
+        <input type="number" id="module" name="module" step="0.1"><br><br>
+
+        <label for="helixAngle">Helix Angle:</label>
+        <input type="number" id="helixAngle" name="helixAngle" step="0.1"><br><br>
+
+        <button onclick="calculateGearParameters()">Calculate</button>
+    </div>
+
+    <div id="results" class="results-section">
+        <p id="pitchDiameter">Pitch Diameter:</p>
+        <p id="baseDiameter">Base Diameter:</p>
+        <p id="outerDiameter">Outer Diameter:</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
